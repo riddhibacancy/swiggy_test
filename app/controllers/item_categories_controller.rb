@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ItemCategoriesController < ApplicationController
-  before_action :find_ItemCategory, only: %i[edit update destroy show]
+  before_action :find_item_category, only: %i[edit update destroy show]
 
   def index
     @item_categories = ItemCategory.all
